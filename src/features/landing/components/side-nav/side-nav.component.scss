@@ -34,10 +34,15 @@ aside {
   0% {
     opacity: 1;
   }
+  99% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
   100% {
     opacity: 0;
-    display: none;
-    transform: translateX(1000);
+    display:none;
+    position: fixed;
+    z-index: -5;
   }
 }
 
@@ -69,10 +74,14 @@ aside {
   0% {
     opacity: .5;
   }
+  99% {
+    opacity: 0;
+  }
   100% {
     opacity: 0;
-    display: none;
-    transform: translateX(100%);
+    display:none;
+    position: fixed;
+    z-index: -5;
   }
 }
 
