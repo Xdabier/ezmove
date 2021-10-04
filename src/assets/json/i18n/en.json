@@ -1,0 +1,13 @@
+{
+  "title": "EzMove",
+  "landing": {
+    "quoteCta": "Free Quote",
+    "nav-buttons": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "tips": "Tips",
+      "contact": "Contact"
+    }
+  }
+}
