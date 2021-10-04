@@ -1,1 +1,88 @@
-<p>footer works!</p>
+<footer class="flex flex-wrap justify-center items-start flex-row w-full bg-black">
+	<ul class="footer-list">
+		<li class="mb-14 sm:mb-20">
+			<a href="#">
+				<app-logo></app-logo>
+			</a>
+		</li>
+		<li class="mb-6">
+			{{ "landing.footer.license" | translate: { licenseNumber: licenseNumber } }}
+		</li>
+		<li class="hidden sm:list-item">
+			{{ "landing.footer.cpr" | translate: { year: year } }}
+		</li>
+	</ul>
+	<ul class="footer-list">
+		<li class="uppercase mb-6">
+			{{ "landing.footer.contact" | translate }}
+		</li>
+		<li>
+			{{ "landing.footer.phone" | translate: { phoneNumber: phoneNumber } }}
+		</li>
+		<li class="mb-6">
+			{{ "landing.footer.email" | translate: { email: email } }}
+		</li>
+		<li>
+			{{ "landing.footer.addressLine1" | translate: { addressLine1: addressLine1 } }}
+		</li>
+		<li>
+			{{ "landing.footer.addressLine2" | translate: { addressLine2: addressLine2 } }}
+		</li>
+	</ul>
+	<ul class="footer-list">
+		<li class="uppercase mb-6">
+			{{ "landing.footer.workingHours" | translate }}
+		</li>
+		<li>
+			{{ "landing.footer.monFri" | translate: { hoursWeek: hoursWeek } }}
+		</li>
+		<li>
+			{{ "landing.footer.sat" | translate: { hoursSat: hoursSat } }}
+		</li>
+		<li>
+			{{ "landing.footer.sun" | translate: { hoursSun: hoursSun } }}
+		</li>
+	</ul>
+	<ul class="footer-list">
+		<li class="uppercase mb-6">
+			{{ "landing.footer.resources" | translate }}
+		</li>
+		<li>
+			<a href="#">
+				{{ "landing.footer.loc" | translate }}
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				{{ "landing.footer.tips" | translate }}
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				{{ "landing.footer.faqs" | translate }}
+			</a>
+		</li>
+		<li class="mb-6">
+			<a href="#">
+				{{ "landing.footer.terms" | translate }}
+			</a>
+		</li>
+		<li class="flex flex-row justify-start items-start social-media mb-6">
+			<a href="#">
+				<img src="assets/s-m/fb.webp" alt="EzMove Facebook page" />
+			</a>
+			<a href="#">
+				<img src="assets/s-m/tw.webp" alt="EzMove Twitter profile" />
+			</a>
+			<a href="#">
+				<img src="assets/s-m/ho.webp" alt="EzMove Houzz page" />
+			</a>
+			<a href="#">
+				<img src="assets/s-m/yt.webp" alt="EzMove Youtube profile" />
+			</a>
+		</li>
+		<li class="list-item sm:hidden">
+			{{ "landing.footer.cpr" | translate: { year: year } }}
+		</li>
+	</ul>
+</footer>

@@ -73,11 +73,6 @@
   left: 50%;
 }
 
-.nav-bar-logo {
-  height: 70px;
-  width: 70px;
-}
-
 .nav-buttons {
   li {
     @apply text-white hover:text-primary transition duration-300 ease-in-out;

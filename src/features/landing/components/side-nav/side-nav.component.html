@@ -1,0 +1,22 @@
+<div class="side-nav-backdrop" [class.fade-out]="hideMenu" [class.fade-in]="!hideMenu" (click)="toggleMenu()"></div>
+<aside [class.hide-menu]="hideMenu" [class.show-menu]="!hideMenu">
+	<nav class="mt-36">
+		<ul class="list-none flex flex-col justify-center items-end side-nav-buttons">
+			<li>
+				<a href="#">{{ "landing.nav-buttons.home" | translate }}</a>
+			</li>
+			<li>
+				<a href="#">{{ "landing.nav-buttons.about" | translate }}</a>
+			</li>
+			<li>
+				<a href="#">{{ "landing.nav-buttons.services" | translate }}</a>
+			</li>
+			<li>
+				<a href="#">{{ "landing.nav-buttons.tips" | translate }}</a>
+			</li>
+			<li>
+				<a href="#">{{ "landing.nav-buttons.contact" | translate }}</a>
+			</li>
+		</ul>
+	</nav>
+</aside>

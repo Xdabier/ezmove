@@ -1,0 +1,19 @@
+.footer-list {
+  @apply w-full sm:w-1/4 list-none flex justify-center flex-col items-center sm:items-start p-4 md:p-8 lg:p-16;
+}
+
+.footer-list li {
+  @apply text-white text-sm leading-relaxed h-7;
+}
+
+.social-media {
+  a {
+    @apply mr-4;
+
+    img {
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+    }
+  }
+}

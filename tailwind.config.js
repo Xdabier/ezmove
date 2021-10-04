@@ -11,7 +11,14 @@ module.exports = {
       black: '#000',
       white: '#fff'
     },
-		extend: {}
+		extend: {
+      keyframes: {
+        slide: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      }
+    }
 	},
 	variants: {
 		extend: {}

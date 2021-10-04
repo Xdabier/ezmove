@@ -1,0 +1,88 @@
+.side-nav-backdrop {
+  @apply w-full h-full overflow-hidden bg-black fixed z-10 top-0 opacity-50 right-auto bottom-0 left-auto;
+}
+
+aside {
+  @apply transition duration-300 ease-in-out;
+  @apply h-full w-3/5 right-0 top-0 absolute z-20 bg-black text-white overflow-y-scroll;
+}
+
+.show-menu {
+  animation-name: showMenu;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.hide-menu {
+  animation-name: hideMenu;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showMenu {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hideMenu {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    transform: translateX(1000);
+  }
+}
+
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: .5;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    transform: translateX(100%);
+  }
+}
+
+.side-nav-buttons {
+  @apply pr-6;
+  li {
+    @apply text-white hover:text-primary transition duration-300 ease-in-out my-2;
+
+    a {
+      @apply text-2xl pr-3;
+    }
+  }
+}

@@ -8,6 +8,24 @@
       "services": "Services",
       "tips": "Tips",
       "contact": "Contact"
+    },
+    "footer": {
+      "license": "Licence number: {{licenseNumber}}",
+      "cpr": "© {{year}} by EzMove",
+      "contact": "Contact",
+      "phone": "Phone: {{phoneNumber}}",
+      "email": "E-mail: {{email}}",
+      "addressLine1": "{{addressLine1}},",
+      "addressLine2": "{{addressLine2}}",
+      "workingHours": "WORKING HOURS",
+      "monFri": "Mon - Fri: {{hoursWeek}}",
+      "sat": "Saturday: {{hoursSat}}",
+      "sun": "Sunday: {{hoursSun}}",
+      "resources": "RESOURCES",
+      "loc": "Locations",
+      "tips": "Tips",
+      "faqs": "FAQs",
+      "terms": "Privacy & Terms"
     }
   }
 }

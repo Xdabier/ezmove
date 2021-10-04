@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { HTTP_LOADER_FACTORY, SharedModule } from "../shared/shared.module";
 import { HttpClient } from "@angular/common/http";
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
 	declarations: [AppComponent],
@@ -13,6 +14,7 @@ import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 		BrowserModule,
 		AppRoutingModule,
 		SharedModule,
+		BrowserAnimationsModule,
 		TranslateModule.forRoot({
 			loader: {
 				provide: TranslateLoader,

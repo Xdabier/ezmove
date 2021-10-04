@@ -3,8 +3,8 @@
 		<span class="font-bold text-lg leading-10">{{ "landing.quoteCta" | translate }}</span>
 	</a>
 	<div class="bg-black w-full h-full flex justify-between items-center">
-		<a href="#">
-			<img class="nav-bar-logo m-6" src="assets/logo.png" alt="EzMove logo" />
+		<a href="#" class="m-6">
+			<app-logo></app-logo>
 		</a>
 		<nav>
 			<ul class="list-none hidden sm:flex items-center nav-buttons">
@@ -25,7 +25,7 @@
 				</li>
 			</ul>
 		</nav>
-		<div id="nav-menu-icon" class="m-6 block sm:hidden" (click)="open = !open" [class.open]="open">
+		<div id="nav-menu-icon" class="m-6 block sm:hidden z-50" (click)="toggleMenu()" [class.open]="!open">
 			<span></span>
 			<span></span>
 			<span></span>
