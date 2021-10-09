@@ -18,14 +18,15 @@ import { PromoBannerComponent } from "./pages/home/components/promo-banner/promo
 import { HomeCarouselComponent } from "./pages/home/components/home-carousel/home-carousel.component";
 import { IvyCarouselModule } from "angular-responsive-carousel";
 import { SocialProofLogosComponent } from "./pages/home/components/social-proof-logos/social-proof-logos.component";
-import { AboutComponent } from './pages/about/about.component';
-import { ServicesComponent } from './pages/services/services.component';
-import { TipsComponent } from './pages/tips/tips.component';
-import { ContactUsComponent } from './pages/contact-us/contact-us.component';
-import { AnyPageHeaderComponent } from './components/any-page-header/any-page-header.component';
-import { AboutTilesComponent } from './pages/about/components/about-tiles/about-tiles.component';
-import { AboutBannerComponent } from './pages/about/components/about-banner/about-banner.component';
-import { TipsTilesComponent } from './pages/tips/components/tips-tiles/tips-tiles.component';
+import { AboutComponent } from "./pages/about/about.component";
+import { ServicesComponent } from "./pages/services/services.component";
+import { TipsComponent } from "./pages/tips/tips.component";
+import { ContactUsComponent } from "./pages/contact-us/contact-us.component";
+import { AnyPageHeaderComponent } from "./components/any-page-header/any-page-header.component";
+import { AboutTilesComponent } from "./pages/about/components/about-tiles/about-tiles.component";
+import { AboutBannerComponent } from "./pages/about/components/about-banner/about-banner.component";
+import { TipsTilesComponent } from "./pages/tips/components/tips-tiles/tips-tiles.component";
+import { AddressComponent } from './pages/contact-us/components/address/address.component';
 
 @NgModule({
 	imports: [CommonModule, SharedModule, LandingRouting, ReactiveFormsModule, IvyCarouselModule],
@@ -44,14 +45,15 @@ import { TipsTilesComponent } from './pages/tips/components/tips-tiles/tips-tile
 		PromoBannerComponent,
 		HomeCarouselComponent,
 		SocialProofLogosComponent,
-  AboutComponent,
-  ServicesComponent,
-  TipsComponent,
-  ContactUsComponent,
-  AnyPageHeaderComponent,
-  AboutTilesComponent,
-  AboutBannerComponent,
-  TipsTilesComponent
+		AboutComponent,
+		ServicesComponent,
+		TipsComponent,
+		ContactUsComponent,
+		AnyPageHeaderComponent,
+		AboutTilesComponent,
+		AboutBannerComponent,
+		TipsTilesComponent,
+  AddressComponent
 	]
 })
 export class LandingModule {}

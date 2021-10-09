@@ -26,6 +26,7 @@ module.exports = {
       height: function (theme) {
         return {
           "160": "40rem",
+          "screen-42": "42vh",
           "screen-63": "63vh",
           "screen-80": "80vh",
           "screen/2": "50vh",

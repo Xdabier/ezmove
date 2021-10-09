@@ -6,10 +6,10 @@
 			</a>
 		</li>
 		<li class="mb-6">
-			{{ "landing.footer.license" | translate: { licenseNumber: licenseNumber } }}
+			{{ "landing.footer.license" | translate: { licenseNumber: info.licenseNumber } }}
 		</li>
 		<li class="hidden sm:list-item">
-			{{ "landing.footer.cpr" | translate: { year: year } }}
+			{{ "landing.footer.cpr" | translate: { year: info.year } }}
 		</li>
 	</ul>
 	<ul appAosFadeUp [aosDelay]="200" class="footer-list">
@@ -17,16 +17,18 @@
 			{{ "landing.footer.contact" | translate }}
 		</li>
 		<li>
-			{{ "landing.footer.phone" | translate: { phoneNumber: phoneNumber } }}
+			<a [href]="'tel:' + info.phoneNumber">{{
+				"landing.footer.phone" | translate: { phoneNumber: info.phoneNumber }
+			}}</a>
 		</li>
 		<li class="mb-6">
-			{{ "landing.footer.email" | translate: { email: email } }}
+			<a [href]="'mailto:' + info.email">{{ "landing.footer.email" | translate: { email: info.email } }}</a>
 		</li>
 		<li>
-			{{ "landing.footer.addressLine1" | translate: { addressLine1: addressLine1 } }}
+			{{ "landing.footer.addressLine1" | translate: { addressLine1: info.addressLine1 } }}
 		</li>
 		<li>
-			{{ "landing.footer.addressLine2" | translate: { addressLine2: addressLine2 } }}
+			{{ "landing.footer.addressLine2" | translate: { addressLine2: info.addressLine2 } }}
 		</li>
 	</ul>
 	<ul appAosFadeUp [aosDelay]="400" class="footer-list">
@@ -34,13 +36,13 @@
 			{{ "landing.footer.workingHours" | translate }}
 		</li>
 		<li>
-			{{ "landing.footer.monFri" | translate: { hoursWeek: hoursWeek } }}
+			{{ "landing.footer.monFri" | translate: { hoursWeek: info.hoursWeek } }}
 		</li>
 		<li>
-			{{ "landing.footer.sat" | translate: { hoursSat: hoursSat } }}
+			{{ "landing.footer.sat" | translate: { hoursSat: info.hoursSat } }}
 		</li>
 		<li>
-			{{ "landing.footer.sun" | translate: { hoursSun: hoursSun } }}
+			{{ "landing.footer.sun" | translate: { hoursSun: info.hoursSun } }}
 		</li>
 	</ul>
 	<ul class="footer-list">
@@ -52,19 +54,9 @@
 				{{ "landing.footer.loc" | translate }}
 			</a>
 		</li>
-		<li appAosFadeUp [aosDelay]="600">
+		<li appAosFadeUp [aosDelay]="600" class="mb-16">
 			<a [routerLink]="'/tips'">
 				{{ "landing.footer.tips" | translate }}
-			</a>
-		</li>
-		<li appAosFadeUp [aosDelay]="600">
-			<a href="#">
-				{{ "landing.footer.faqs" | translate }}
-			</a>
-		</li>
-		<li class="mb-6" appAosFadeUp [aosDelay]="600">
-			<a href="#">
-				{{ "landing.footer.terms" | translate }}
 			</a>
 		</li>
 		<li class="flex flex-row justify-start items-start social-media mb-6" appAosFadeUp [aosDelay]="600">
@@ -82,7 +74,7 @@
 			</a>
 		</li>
 		<li appAosFadeUp [aosDelay]="600" class="list-item sm:hidden">
-			{{ "landing.footer.cpr" | translate: { year: year } }}
+			{{ "landing.footer.cpr" | translate: { year: info.year } }}
 		</li>
 	</ul>
 </footer>
