@@ -1,0 +1,4 @@
+.about-banner-image {
+  @apply bg-about-banner-image bg-local sm:bg-fixed bg-top;
+  @apply bg-no-repeat w-full h-screen/3 sm:h-screen-63;
+}

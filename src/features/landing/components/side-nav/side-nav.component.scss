@@ -92,6 +92,10 @@ aside {
 
     a {
       @apply text-2xl pr-3;
+
+      &[active=true] {
+        @apply text-primary;
+      }
     }
   }
 }

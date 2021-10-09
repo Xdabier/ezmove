@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, HostListener, OnInit } from "@angular/core";
 import { PubSubService } from "../../../../core/services/pub-sub.service";
 import { PubSubTopicsEnum } from "../../../../core/enums/pub-sub-topics.enum";
 
@@ -9,6 +9,7 @@ import { PubSubTopicsEnum } from "../../../../core/enums/pub-sub-topics.enum";
 })
 export class LandingComponent implements OnInit {
 	menuState = true;
+	isButtonShowing = false;
 
 	constructor(private pubSubService: PubSubService) {}
 
@@ -17,6 +18,19 @@ export class LandingComponent implements OnInit {
 			if (value.topic === PubSubTopicsEnum.toggleMenu) {
 				this.menuState = value.data as boolean;
 			}
+		});
+		this.showScrollButton();
+	}
+
+	@HostListener("window:scroll")
+	showScrollButton(): void {
+		const scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+		this.isButtonShowing = scroll >= 400;
+	}
+
+	scrollToTop(): void {
+		window.scrollTo({
+			top: 0
 		});
 	}
 }

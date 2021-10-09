@@ -79,6 +79,10 @@
 
     a {
       @apply text-base p-4;
+
+      &[active=true] {
+        @apply text-primary;
+      }
     }
   }
 }

@@ -1,0 +1,32 @@
+.parallax-video-mobile {
+  video {
+    @apply w-screen h-screen/2 sm:h-screen absolute object-cover top-0 left-0;
+  }
+
+  .viewport-header {
+    @apply flex justify-center items-start w-screen;
+    @apply h-screen/2 sm:h-screen relative;
+    @apply bg-black-50 py-6 px-4;
+
+    h1 {
+      @apply text-white text-4xl font-extrabold;
+    }
+  }
+}
+
+.parallax-video-desktop {
+  video {
+    @apply w-screen h-screen fixed object-cover left-0;
+    z-index: -999;
+  }
+
+  .viewport-header {
+    width: calc(100vw - 17px);
+    @apply h-screen/2 sm:h-screen relative left-0 right-0;
+    @apply bg-black-50;
+
+    h1 {
+      @apply text-white text-7xl font-extrabold max-w-4xl pt-52 pl-32;
+    }
+  }
+}

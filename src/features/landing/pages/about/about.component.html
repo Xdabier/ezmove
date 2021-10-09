@@ -1,0 +1,14 @@
+<main>
+	<app-any-page-header
+		[title]="'about.title' | translate"
+		[paragraph1]="'about.p1' | translate"
+		[paragraph2]="'about.p2' | translate"
+	></app-any-page-header>
+	<div class="flex flex-col justify-center items-start sm:items-center py-16 bg-whitesmoke">
+		<h2 appAosFadeUp class="banner-title-extra text-black pl-7 sm:pl-0">
+			{{ "about.subTitle" | translate }}
+		</h2>
+	</div>
+	<app-about-tiles></app-about-tiles>
+	<app-about-banner></app-about-banner>
+</main>

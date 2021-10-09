@@ -1,0 +1,53 @@
+<section class="flex flex-row flex-wrap w-full justify-between items-center">
+	<div
+		class="flex flex-col justify-between items-center py-10 w-screen sm:w-1/4 h-36 sm:h-48"
+		*ngFor="let tile of tiles; let i = index"
+		[ngClass]="tile.color"
+		appAosFadeUp
+		[aosDelay]="(i + 3) * 100"
+		[activateDesktopOnly]="false"
+		[activateMobileOnly]="true"
+	>
+		<svg
+			appAosFadeUp
+			[aosDelay]="(i + 3) * 100"
+			[activateMobileOnly]="false"
+			[activateDesktopOnly]="true"
+			class="svg-size"
+			preserveAspectRatio="xMidYMid meet"
+			data-bbox="20 20.997 160 158.007"
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="20 20.997 160 158.007"
+			aria-hidden="true"
+		>
+			<g>
+				<path d="M138.806 20.997v118.806H20V20.997h118.806z" [attr.fill]="tile.iconColor" data-color="1"></path>
+				<path
+					d="M180 60.198v118.806H61.194V60.198H180z"
+					opacity=".5"
+					[attr.fill]="tile.iconColor"
+					data-color="1"
+				></path>
+			</g>
+		</svg>
+		<span
+			appAosFadeUp
+			[aosDelay]="(i + 3) * 100"
+			[activateMobileOnly]="false"
+			[activateDesktopOnly]="true"
+			class="mt-6 text-sm sm:text-lg font-bold"
+			[ngClass]="tile.textColor"
+			>{{ tile.desc }}</span
+		>
+		<h2
+			class="font-bold text-2xl sm:text-3xl w-full sm:w-2/5 text-center"
+			[ngClass]="tile.textColor"
+			appAosFadeUp
+			[aosDelay]="(i + 3) * 100"
+			[activateMobileOnly]="false"
+			[activateDesktopOnly]="true"
+		>
+			{{ tile.title }}
+		</h2>
+	</div>
+</section>

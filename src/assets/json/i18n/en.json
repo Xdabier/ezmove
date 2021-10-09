@@ -1,5 +1,6 @@
 {
   "title": "EzMove",
+  "readMore": "Read more",
   "landing": {
     "quoteCta": "Free Quote",
     "nav-buttons": {
@@ -26,6 +27,59 @@
       "tips": "Tips",
       "faqs": "FAQs",
       "terms": "Privacy & Terms"
+    },
+    "homeHero": {
+      "title": "Making Your Move Quick & Easy",
+      "call-us":  "Call us",
+      "phone": "{{phoneNumber}}",
+      "start-online": "start online",
+      "desc": "Get a free moving quote in seconds"
+    },
+    "description": {
+      "title": "The Fly Right Way",
+      "desc": "I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. Tell your visitors a bit about your services.",
+      "cta": "More about us"
     }
-  }
+  },
+  "contact-us": {
+    "title": "Get Your Free Quote",
+    "desc": "I'm a paragraph. Click here to add your own text and edit me. It's easy.",
+    "zip-1-label": "Moving From Zip Code",
+    "zip-2-label": "Moving to Zip Code",
+    "date-label": "Moving Date",
+    "rooms-label": "Number of Rooms",
+    "first-name-label": "First Name",
+    "last-name-label": "Last Name",
+    "phone-label": "Phone",
+    "submit-button": "Submit"
+  },
+  "services": {
+    "title": "Our services",
+    "p1": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you."
+  },
+  "tips": {
+    "title": "Moving Tips",
+    "p1": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you."
+  },
+  "contact-us-page": {
+    "title": "Let’s Get You Moving",
+    "p1": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you."
+  },
+  "promo-banner": {
+    "title": "Movers You Can Trust"
+  },
+  "testimonials": {
+    "title": "Our Happy Customers"
+  },
+  "about": {
+    "title": "About EzMove",
+    "p1": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.\n\n",
+    "p2": "This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.\n\n",
+    "subTitle": "Our Moving Process"
+  },
+  "about-banner": {
+    "title": "Our Quality Guarantee",
+    "desc": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font."
+  },
+  "estimate": "Get A Free Estimate"
 }

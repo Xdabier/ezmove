@@ -3,19 +3,27 @@
 	<nav class="mt-36">
 		<ul class="list-none flex flex-col justify-center items-end side-nav-buttons">
 			<li>
-				<a href="#">{{ "landing.nav-buttons.home" | translate }}</a>
+				<a [routerLink]="'/'" [attr.active]="activeUrl === '/'">{{ "landing.nav-buttons.home" | translate }}</a>
 			</li>
 			<li>
-				<a href="#">{{ "landing.nav-buttons.about" | translate }}</a>
+				<a [routerLink]="'/about'" [attr.active]="activeUrl === '/about'">{{
+					"landing.nav-buttons.about" | translate
+				}}</a>
 			</li>
 			<li>
-				<a href="#">{{ "landing.nav-buttons.services" | translate }}</a>
+				<a [routerLink]="'/services'" [attr.active]="activeUrl === '/services'">{{
+					"landing.nav-buttons.services" | translate
+				}}</a>
 			</li>
 			<li>
-				<a href="#">{{ "landing.nav-buttons.tips" | translate }}</a>
+				<a [routerLink]="'/tips'" [attr.active]="activeUrl === '/tips'">{{
+					"landing.nav-buttons.tips" | translate
+				}}</a>
 			</li>
 			<li>
-				<a href="#">{{ "landing.nav-buttons.contact" | translate }}</a>
+				<a [routerLink]="'/contact-us'" [attr.active]="activeUrl === '/contact-us'">{{
+					"landing.nav-buttons.contact" | translate
+				}}</a>
 			</li>
 		</ul>
 	</nav>

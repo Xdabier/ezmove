@@ -1,27 +1,37 @@
-<header class="w-full h-28 flex justify-start items-center flex-col">
-	<a href="#" class="w-full h-11 bg-primary justify-center items-center flex-col flex sm:hidden">
+<header class="w-full h-28 flex justify-start items-center flex-col relative sm:fixed z-auto sm:z-40">
+	<a [href]="'/#get-free-quote'" class="w-full h-11 bg-primary justify-center items-center flex-col flex sm:hidden">
 		<span class="font-bold text-lg leading-10">{{ "landing.quoteCta" | translate }}</span>
 	</a>
 	<div class="bg-black w-full h-full flex justify-between items-center">
-		<a href="#" class="m-6">
+		<a [routerLink]="'/'" class="m-6">
 			<app-logo></app-logo>
 		</a>
 		<nav>
 			<ul class="list-none hidden sm:flex items-center nav-buttons">
 				<li>
-					<a href="#">{{ "landing.nav-buttons.home" | translate }}</a>
+					<a [routerLink]="'/'" [attr.active]="activeUrl === '/'">{{
+						"landing.nav-buttons.home" | translate
+					}}</a>
 				</li>
 				<li>
-					<a href="#">{{ "landing.nav-buttons.about" | translate }}</a>
+					<a [routerLink]="'/about'" [attr.active]="activeUrl === '/about'">{{
+						"landing.nav-buttons.about" | translate
+					}}</a>
 				</li>
 				<li>
-					<a href="#">{{ "landing.nav-buttons.services" | translate }}</a>
+					<a [routerLink]="'/services'" [attr.active]="activeUrl === '/services'">{{
+						"landing.nav-buttons.services" | translate
+					}}</a>
 				</li>
 				<li>
-					<a href="#">{{ "landing.nav-buttons.tips" | translate }}</a>
+					<a [routerLink]="'/tips'" [attr.active]="activeUrl === '/tips'">{{
+						"landing.nav-buttons.tips" | translate
+					}}</a>
 				</li>
 				<li>
-					<a href="#">{{ "landing.nav-buttons.contact" | translate }}</a>
+					<a [routerLink]="'/contact-us'" [attr.active]="activeUrl === '/contact-us'">{{
+						"landing.nav-buttons.contact" | translate
+					}}</a>
 				</li>
 			</ul>
 		</nav>
@@ -32,7 +42,30 @@
 			<span></span>
 		</div>
 		<a
-			href="#"
+			*ngIf="activeUrl !== '/'"
+			[routerLink]="'/'"
+			[fragment]="'get-free-quote'"
+			class="
+				w-52
+				h-full
+				transition
+				duration-300
+				ease-in-out
+				justify-center
+				items-center
+				flex-col
+				hidden
+				sm:flex
+				bg-primary
+				hover:bg-black hover:text-white
+				transition-all
+			"
+		>
+			<span class="font-bold text-lg">{{ "landing.quoteCta" | translate }}</span>
+		</a>
+		<a
+			*ngIf="activeUrl === '/'"
+			[href]="'/#get-free-quote'"
 			class="
 				w-52
 				h-full

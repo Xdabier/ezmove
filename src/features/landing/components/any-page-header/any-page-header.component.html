@@ -1,0 +1,27 @@
+<section class="flex flex-col sm:flex-row w-full mt-10 sm:mt-28">
+	<div class="header-side bg-primary p-3 sm:p-40 h-screen/5 sm:h-screen-63">
+		<h1 appAosFadeUp class="text-white text-3xl sm:text-7xl font-bold">
+			{{ title }}
+		</h1>
+	</div>
+	<div class="header-side bg-white p-8 sm:p-48">
+		<p *ngIf="paragraph1" appAosFadeUp [aosDelay]="200">
+			{{ paragraph1 }}
+		</p>
+		<br *ngIf="paragraph1 && (paragraph2 || showQuotesButton)" />
+		<p *ngIf="paragraph2" appAosFadeUp [aosDelay]="400">
+			{{ paragraph2 }}
+		</p>
+		<br *ngIf="paragraph1 && (paragraph2 || showQuotesButton)" />
+		<a
+			*ngIf="showQuotesButton"
+			appAosFadeUp
+			[aosDelay]="400"
+			[routerLink]="'/'"
+			[fragment]="'get-free-quote'"
+			class="primary-theme-button-anchor w-max self-start"
+		>
+			{{ "estimate" | translate }}
+		</a>
+	</div>
+</section>

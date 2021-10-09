@@ -1,0 +1,18 @@
+form {
+  width: 26.5rem;
+}
+
+input, select {
+  @apply w-full h-12 mt-2;
+}
+
+
+.contact-us-submit-button {
+  &[disabled] {
+    opacity: .4;
+
+    &:hover {
+      @apply bg-black text-white cursor-default;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <footer class="flex flex-wrap justify-center items-start flex-row w-full bg-black">
-	<ul class="footer-list">
+	<ul appAosFadeUp class="footer-list">
 		<li class="mb-14 sm:mb-20">
 			<a href="#">
 				<app-logo></app-logo>
@@ -12,7 +12,7 @@
 			{{ "landing.footer.cpr" | translate: { year: year } }}
 		</li>
 	</ul>
-	<ul class="footer-list">
+	<ul appAosFadeUp [aosDelay]="200" class="footer-list">
 		<li class="uppercase mb-6">
 			{{ "landing.footer.contact" | translate }}
 		</li>
@@ -29,7 +29,7 @@
 			{{ "landing.footer.addressLine2" | translate: { addressLine2: addressLine2 } }}
 		</li>
 	</ul>
-	<ul class="footer-list">
+	<ul appAosFadeUp [aosDelay]="400" class="footer-list">
 		<li class="uppercase mb-6">
 			{{ "landing.footer.workingHours" | translate }}
 		</li>
@@ -44,30 +44,30 @@
 		</li>
 	</ul>
 	<ul class="footer-list">
-		<li class="uppercase mb-6">
+		<li appAosFadeUp [aosDelay]="600" class="uppercase mb-6">
 			{{ "landing.footer.resources" | translate }}
 		</li>
-		<li>
-			<a href="#">
+		<li appAosFadeUp [aosDelay]="600">
+			<a [routerLink]="'/contact-us'">
 				{{ "landing.footer.loc" | translate }}
 			</a>
 		</li>
-		<li>
-			<a href="#">
+		<li appAosFadeUp [aosDelay]="600">
+			<a [routerLink]="'/tips'">
 				{{ "landing.footer.tips" | translate }}
 			</a>
 		</li>
-		<li>
+		<li appAosFadeUp [aosDelay]="600">
 			<a href="#">
 				{{ "landing.footer.faqs" | translate }}
 			</a>
 		</li>
-		<li class="mb-6">
+		<li class="mb-6" appAosFadeUp [aosDelay]="600">
 			<a href="#">
 				{{ "landing.footer.terms" | translate }}
 			</a>
 		</li>
-		<li class="flex flex-row justify-start items-start social-media mb-6">
+		<li class="flex flex-row justify-start items-start social-media mb-6" appAosFadeUp [aosDelay]="600">
 			<a href="#">
 				<img src="assets/s-m/fb.webp" alt="EzMove Facebook page" />
 			</a>
@@ -81,7 +81,7 @@
 				<img src="assets/s-m/yt.webp" alt="EzMove Youtube profile" />
 			</a>
 		</li>
-		<li class="list-item sm:hidden">
+		<li appAosFadeUp [aosDelay]="600" class="list-item sm:hidden">
 			{{ "landing.footer.cpr" | translate: { year: year } }}
 		</li>
 	</ul>

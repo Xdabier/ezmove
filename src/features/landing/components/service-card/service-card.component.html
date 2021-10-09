@@ -1,0 +1,23 @@
+<div
+	class="flex flex-col bg-black sm:bg-white justify-start items-start w-full sm:w-screen/2-spacing-15"
+	[class.mb-3.5]="index < 3"
+	[class.mb-conditional]="index === 3"
+>
+	<img [src]="'assets/services/' + service.image" [alt]="service.title" class="w-full object-fill object-center" />
+	<div class="flex flex-col justify-center items-start p-7 sm:p-20">
+		<h2 appAosFadeUp [aosDelay]="(index + 5) * 100" class="font-bold text-xl sm:text-3xl text-white sm:text-black">
+			{{ service.title }}
+		</h2>
+		<p appAosFadeUp [aosDelay]="(index + 5) * 100" class="text-white sm:text-black max-w-sm mb-4">
+			{{ service.description }}
+		</p>
+		<a
+			*ngIf="showButton"
+			appAosFadeUp
+			[aosDelay]="(index + 5) * 100"
+			[routerLink]="'/services'"
+			class="primary-theme-button-anchor w-max"
+			>{{ "readMore" | translate }}</a
+		>
+	</div>
+</div>

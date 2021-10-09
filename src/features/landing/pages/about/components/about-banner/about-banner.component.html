@@ -1,0 +1,35 @@
+<section class="flex flex-col justify-start items-start">
+	<div class="about-banner-image overflow-hidden flex justify-center items-center" [ngStyle]="bgSize">
+		<div class="w-full h-full px-72 bg-black-40 flex flex-col justify-center items-start">
+			<h1
+				appAosFadeUp
+				[aosDelay]="200"
+				class="
+					hidden
+					sm:block
+					mb-8
+					text-white
+					font-bold
+					text-4xl
+					sm:text-6xl
+					text-center
+					max-w-xs
+					sm:max-w-full
+				"
+			>
+				{{ "about-banner.title" | translate }}
+			</h1>
+			<p appAosFadeUp [aosDelay]="400" class="hidden sm:block text-white max-w-2xl mb-4">
+				{{ "about-banner.desc" | translate }}
+			</p>
+		</div>
+	</div>
+	<div class="block sm:hidden bg-black flex flex-col justify-center items-start p-7">
+		<h2 appAosFadeUp [aosDelay]="200" class="font-bold text-xl text-white">
+			{{ "about-banner.title" | translate }}
+		</h2>
+		<p appAosFadeUp [aosDelay]="400" class="text-white max-w-sm mb-4">
+			{{ "about-banner.desc" | translate }}
+		</p>
+	</div>
+</section>

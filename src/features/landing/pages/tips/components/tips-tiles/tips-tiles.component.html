@@ -1,0 +1,14 @@
+<section class="bg-whitesmoke flex flex-row flex-wrap justify-between items-center">
+	<div
+		*ngFor="let tile of tipsTiles; let i = index"
+		class="flex flex-col justify-center items-center w-full py-8 px-8 sm:px-44 sm:py-24 sm:w-screen/2-spacing-15"
+		[class.mb-3.5]="i < 3"
+		[ngClass]="tile.bgColor"
+		[class.mb-conditional]="i === 3"
+	>
+		<h2 appAosFadeUp class="text-center text-lg font-bold mb-2" [ngClass]="tile.textColor">
+			{{ tile.title }}
+		</h2>
+		<p appAosFadeUp [aosDelay]="300" class="text-center" [ngClass]="tile.textColor">{{ tile.tip }}</p>
+	</div>
+</section>

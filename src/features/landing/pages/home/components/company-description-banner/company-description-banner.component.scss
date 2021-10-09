@@ -1,0 +1,14 @@
+.company-description-banner {
+  @apply mt-7 sm:mt-28 flex flex-row flex-wrap w-full h-auto sm:h-160;
+  @apply justify-start sm:justify-center items-center;
+}
+
+.banner-content {
+  @apply flex flex-col sm:items-start justify-start;
+  @apply w-full sm:w-1/2 bg-primary p-6 sm:p-36 h-screen/2 sm:h-full;
+
+  &-image {
+    @apply order-1 sm:order-2 w-full sm:w-1/2;
+    @apply bg-banner-image bg-scroll sm:bg-fixed bg-right bg-no-repeat h-screen/3 sm:h-full;
+  }
+}

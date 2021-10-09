@@ -4,6 +4,8 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
+import { LayoutModule } from "@angular/cdk/layout";
+import { AosFadeUpDirective } from "./directives/aos-fade-up.directive";
 
 export const HTTP_LOADER_FACTORY = (httpClient: HttpClient): TranslateHttpLoader =>
 	new TranslateHttpLoader(httpClient, "/assets/json/i18n/", ".json");
@@ -13,6 +15,7 @@ export const HTTP_LOADER_FACTORY = (httpClient: HttpClient): TranslateHttpLoader
 		CommonModule,
 		HttpClientModule,
 		FormsModule,
+		LayoutModule,
 		TranslateModule.forChild({
 			loader: {
 				provide: TranslateLoader,
@@ -21,6 +24,7 @@ export const HTTP_LOADER_FACTORY = (httpClient: HttpClient): TranslateHttpLoader
 			}
 		})
 	],
-	exports: [CommonModule, HttpClientModule, FormsModule, TranslateModule]
+	exports: [AosFadeUpDirective, CommonModule, HttpClientModule, FormsModule, TranslateModule, LayoutModule],
+	declarations: [AosFadeUpDirective]
 })
 export class SharedModule {}

@@ -3,6 +3,96 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: #ff6538
+}
+
+.theme-button {
+  @apply bg-black text-white cursor-pointer;
+  @apply hover:bg-white hover:text-black;
+  @apply text-lg sm:text-base;
+}
+
+.theme-button-anchor {
+  @extend .theme-button;
+  @apply py-3 px-6;
+}
+
+.primary-theme-button {
+  @apply bg-primary text-black cursor-pointer;
+  @apply hover:bg-black hover:text-white;
+  @apply text-lg sm:text-base;
+}
+
+.primary-theme-button-anchor {
+  @extend .primary-theme-button;
+  @apply py-2 px-9;
+}
+
+.banner-title {
+  max-width: 33rem;
+  @apply text-3xl sm:text-6xl font-bold;
+}
+
+.banner-title-extra {
+  max-width: 41rem;
+  @apply text-3xl sm:text-6xl font-bold;
+}
+
+.banner-description {
+  @apply max-w-sm sm:max-w-xs mt-4 sm:mt-10;
+}
+
+@keyframes fade-in-up {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fade-in-up {
+  from {
+    transform: translate3d(0,20px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 700ms;
+  -webkit-animation-fill-mode: both
+}
+
+.animated-fade-in-up {
+  opacity: 0
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation-name: fade-in-up;
+  -webkit-animation-name: fade-in-up;
+}
+
+.svg-size {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.mb-conditional {
+  @apply mb-0 sm:mb-3.5;
 }

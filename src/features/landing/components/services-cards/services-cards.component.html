@@ -1,0 +1,8 @@
+<section class="bg-whitesmoke flex flex-row flex-wrap justify-between items-center">
+	<app-service-card
+		[showButton]="showButtons"
+		*ngFor="let serv of services; let i = index"
+		[index]="i"
+		[service]="serv"
+	></app-service-card>
+</section>
