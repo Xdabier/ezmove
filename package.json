@@ -23,8 +23,7 @@
     "@angular/router": "~12.2.0",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
-    "angular-responsive-carousel": "^2.1.2",
-    "aos": "^2.3.4",
+    "ngx-owl-carousel-o": "^6.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -40,7 +39,6 @@
     "@angular/compiler-cli": "~12.2.0",
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
-    "@types/aos": "^3.0.4",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "4.28.2",

@@ -37,4 +37,24 @@ export class NavBarComponent implements OnInit {
 			}
 		});
 	}
+
+	getLinkWithAnchor(): string {
+		if (this.activeUrl.length === 1) {
+			return `${this.activeUrl.slice(0, -1)}#get-free-quote`;
+		}
+
+		if (this.activeUrl[this.activeUrl.length - 1] === "/") {
+			return `${this.activeUrl.slice(0, -1)}#get-free-quote`;
+		}
+
+		if (this.activeUrl.includes("#")) {
+			return this.activeUrl;
+		}
+
+		if (this.activeUrl[this.activeUrl.length - 1] !== "/") {
+			return `${this.activeUrl}#get-free-quote`;
+		}
+
+		return "/#get-free-quote";
+	}
 }

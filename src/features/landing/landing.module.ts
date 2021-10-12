@@ -16,7 +16,6 @@ import { ServiceCardComponent } from "./components/service-card/service-card.com
 import { ServicesCardsComponent } from "./components/services-cards/services-cards.component";
 import { PromoBannerComponent } from "./pages/home/components/promo-banner/promo-banner.component";
 import { HomeCarouselComponent } from "./pages/home/components/home-carousel/home-carousel.component";
-import { IvyCarouselModule } from "angular-responsive-carousel";
 import { SocialProofLogosComponent } from "./pages/home/components/social-proof-logos/social-proof-logos.component";
 import { AboutComponent } from "./pages/about/about.component";
 import { ServicesComponent } from "./pages/services/services.component";
@@ -26,10 +25,11 @@ import { AnyPageHeaderComponent } from "./components/any-page-header/any-page-he
 import { AboutTilesComponent } from "./pages/about/components/about-tiles/about-tiles.component";
 import { AboutBannerComponent } from "./pages/about/components/about-banner/about-banner.component";
 import { TipsTilesComponent } from "./pages/tips/components/tips-tiles/tips-tiles.component";
-import { AddressComponent } from './pages/contact-us/components/address/address.component';
+import { AddressComponent } from "./pages/contact-us/components/address/address.component";
+import { CarouselModule } from "ngx-owl-carousel-o";
 
 @NgModule({
-	imports: [CommonModule, SharedModule, LandingRouting, ReactiveFormsModule, IvyCarouselModule],
+	imports: [CommonModule, SharedModule, LandingRouting, ReactiveFormsModule, CarouselModule],
 	declarations: [
 		HomeComponent,
 		LandingComponent,
@@ -53,7 +53,7 @@ import { AddressComponent } from './pages/contact-us/components/address/address.
 		AboutTilesComponent,
 		AboutBannerComponent,
 		TipsTilesComponent,
-  AddressComponent
+		AddressComponent
 	]
 })
 export class LandingModule {}

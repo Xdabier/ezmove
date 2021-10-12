@@ -38,10 +38,14 @@ module.exports = {
       width: function (theme) {
         return {
           "160": "40rem",
+          "95-percent": "95%",
           "70-percent": "70%",
           "65-percent": "65%",
           "60-percent": "60%",
           "screen/2": "50vw",
+          "screen/4/5": "80vw",
+          "screen/7/12": "58.333333vw",
+          "screen/8/12": "66.6666666666vw",
           "screen/2-spacing-10": "calc(50vw - 10px)",
           "screen/2-spacing-15": "calc(50vw - 15px)",
           "screen/2-spacing-20": "calc(50vw - 20px)",

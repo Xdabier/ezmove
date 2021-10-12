@@ -1,5 +1,9 @@
 <header class="w-full h-28 flex justify-start items-center flex-col relative sm:fixed z-auto sm:z-40">
-	<a [href]="'/#get-free-quote'" class="w-full h-11 bg-primary justify-center items-center flex-col flex sm:hidden">
+	<a
+		[routerLink]="activeUrl"
+		[fragment]="'get-free-quote'"
+		class="w-full h-11 bg-primary justify-center items-center flex-col flex sm:hidden"
+	>
 		<span class="font-bold text-lg leading-10">{{ "landing.quoteCta" | translate }}</span>
 	</a>
 	<div class="bg-black w-full h-full flex justify-between items-center">
@@ -43,7 +47,7 @@
 		</div>
 		<a
 			*ngIf="activeUrl !== '/'"
-			[routerLink]="'/'"
+			[routerLink]="activeUrl"
 			[fragment]="'get-free-quote'"
 			class="
 				w-52
@@ -65,7 +69,8 @@
 		</a>
 		<a
 			*ngIf="activeUrl === '/'"
-			[href]="'/#get-free-quote'"
+			[routerLink]="activeUrl"
+			[fragment]="'get-free-quote'"
 			class="
 				w-52
 				h-full

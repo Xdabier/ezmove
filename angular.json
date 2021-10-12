@@ -35,12 +35,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/aos/dist/aos.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/aos/dist/aos.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

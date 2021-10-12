@@ -1,6 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
-import { Carousel } from "angular-responsive-carousel/lib/carousel";
 import { BreakpointObserver } from "@angular/cdk/layout";
+import { CarouselComponent, OwlOptions } from "ngx-owl-carousel-o";
 
 interface TestimonialsInterface {
 	content: string;
@@ -13,7 +13,7 @@ interface TestimonialsInterface {
 	styleUrls: ["./home-carousel.component.scss"]
 })
 export class HomeCarouselComponent {
-	@ViewChild("theCarousel", { static: false }) theCarousel!: Carousel;
+	@ViewChild("theCarousel", { static: false }) theCarousel!: CarouselComponent;
 
 	carouselWidth = this.breakpointObserver.isMatched("(min-width: 640px)")
 		? window.innerWidth / 2
@@ -35,6 +35,32 @@ export class HomeCarouselComponent {
 			title: "The Webers"
 		}
 	];
+
+	carouselOptions: OwlOptions = {
+		loop: true,
+		autoplay: true,
+		mouseDrag: true,
+		touchDrag: false,
+		pullDrag: false,
+		dots: false,
+		autoplaySpeed: 700,
+		navSpeed: 700,
+		responsive: {
+			0: {
+				items: 1
+			},
+			400: {
+				items: 1
+			},
+			740: {
+				items: 1
+			},
+			940: {
+				items: 1
+			}
+		},
+		nav: false
+	};
 
 	constructor(private breakpointObserver: BreakpointObserver) {}
 

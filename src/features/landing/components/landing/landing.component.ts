@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit } from "@angular/core";
 import { PubSubService } from "../../../../core/services/pub-sub.service";
 import { PubSubTopicsEnum } from "../../../../core/enums/pub-sub-topics.enum";
+import { AnchorScrollingService } from "../../../../core/services/anchor-scrolling.service";
 
 @Component({
 	selector: "app-landing",
@@ -11,9 +12,11 @@ export class LandingComponent implements OnInit {
 	menuState = true;
 	isButtonShowing = false;
 
-	constructor(private pubSubService: PubSubService) {}
+	constructor(private pubSubService: PubSubService, private anchorScrollingService: AnchorScrollingService) {}
 
 	ngOnInit(): void {
+		this.anchorScrollingService.listen();
+
 		this.pubSubService.sub().subscribe((value) => {
 			if (value.topic === PubSubTopicsEnum.toggleMenu) {
 				this.menuState = value.data as boolean;

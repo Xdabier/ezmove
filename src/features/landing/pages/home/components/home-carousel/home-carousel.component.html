@@ -1,31 +1,23 @@
-<section class="w-full flex flex-col justify-center items-center py-6 bg-whitesmoke">
-	<div class="w-60-percent flex flex-row justify-center items-center sm:w-1/2">
-		<button class="mr-7" (click)="prevSlide()">
+<section class="overflow-hidden flex flex-col justify-center items-center py-6 bg-whitesmoke">
+	<div class="w-full flex flex-row justify-center items-center sm:w-8/12">
+		<button class="mr-7" (click)="nextSlide()">
 			<svg viewBox="0 0 21 41" height="32" width="16">
 				<path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
 			</svg>
 		</button>
-		<carousel
-			#theCarousel
-			[arrowsOutside]="true"
-			[cellsToShow]="1"
-			[cellsToScroll]="1"
-			[arrows]="false"
-			[loop]="true"
-			[autoplay]="true"
-			[width]="carouselWidth"
-		>
-			<div
-				*ngFor="let testim of testimonials"
-				class="carousel-cell w-full flex flex-col items-center justify-center"
-			>
-				<p class="text-center w-full p-3">“{{ testim.content }}”</p>
-				<h3 class="text-center font-bold">
-					{{ testim.title }}
-				</h3>
-			</div>
-		</carousel>
-		<button class="transform rotate-180 ml-7" (click)="nextSlide()">
+		<owl-carousel-o #theCarousel [options]="carouselOptions" class="w-8/12">
+			<ng-container *ngFor="let testim of testimonials">
+				<ng-template carouselSlide>
+					<div class="w-screen/8/12 sm:w-full flex flex-col items-center justify-center">
+						<p class="text-center w-full p-3">“{{ testim.content }}”</p>
+						<h3 class="text-center font-bold">
+							{{ testim.title }}
+						</h3>
+					</div>
+				</ng-template>
+			</ng-container>
+		</owl-carousel-o>
+		<button class="transform rotate-180 ml-7" (click)="prevSlide()">
 			<svg viewBox="0 0 21 41" height="32" width="16">
 				<path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
 			</svg>

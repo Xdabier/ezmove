@@ -1,4 +1,24 @@
 {
+  "home-meta": {
+    "title": "Making Your Move Quick & Easy",
+    "description": "We are ezmove we make your move quick and easy Our local moving teams have successfully performed countless apartment, home & office moves. We know techniques that get the job done right."
+  },
+  "about-meta": {
+    "title": "About us",
+    "description": ""
+  },
+  "tips-meta": {
+    "title": "Moving Tips",
+    "description": ""
+  },
+  "services-meta": {
+    "title": "Our services",
+    "description": ""
+  },
+  "contact-meta": {
+    "title": "Let’s Get You Moving",
+    "description": ""
+  },
   "title": "EzMove",
   "readMore": "Read more",
   "landing": {
@@ -36,14 +56,14 @@
       "desc": "Get a free moving quote in seconds"
     },
     "description": {
-      "title": "The Fly Right Way",
-      "desc": "I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. Tell your visitors a bit about your services.",
+      "title": "Ez\nMove",
+      "desc": "We are ezmove we make your move quick and easy Our local moving teams have successfully performed countless apartment, home & office moves. We know techniques that get the job done right.",
       "cta": "More about us"
     }
   },
   "contact-us": {
     "title": "Get Your Free Quote",
-    "desc": "I'm a paragraph. Click here to add your own text and edit me. It's easy.",
+    "desc": "Request a free estimate by submitting an online form or by giving us a call.",
     "zip-1-label": "Moving From Zip Code",
     "zip-2-label": "Moving to Zip Code",
     "date-label": "Moving Date",
@@ -75,13 +95,17 @@
   },
   "about": {
     "title": "About EzMove",
-    "p1": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.\n\n",
-    "p2": "This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.\n\n",
+    "p1": "If you need commercial or personal moving services, an EZMOVE professional team of qualified movers can be especially helpful. We will stay with you from packaging to delivery, and provide you with swift and secure service taking into account the specifics and requirements you have. We aim to offer fast, dynamic, and competitive moving services, always cherishing the safety of your belongings. Call us today or get an online quote in a couple of clicks!",
+    "p2": "EZMOVE provides complete moving services which include packing and unpacking, transportation, and delivery of your belongings.Whether you’re moving office furniture, home appliances, fragile object, interior design items, specialized equipment, or anything else, our team can help you move faster and easier.",
     "subTitle": "Our Moving Process"
   },
   "about-banner": {
     "title": "Our Quality Guarantee",
     "desc": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font."
   },
-  "estimate": "Get A Free Estimate"
+  "estimate": "Get A Free Estimate",
+  "form-sent": {
+    "success": "Thank you for your submission, we'll contact you shortly!",
+    "error": "Submission error, you probably did submit before! if error keeps happening please contact us."
+  }
 }

@@ -12,26 +12,22 @@ export class ServicesCardsComponent {
 	services: ServiceCardInterface[] = [
 		{
 			title: "Local Moving",
-			description:
-				"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
+			description: `We have more than 20 trucks of multiple sizes to help you move within the Bay Area.`,
 			image: "s1.webp"
 		},
 		{
 			title: "Long Distance Moving",
-			description:
-				"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
+			description: `Professional movers are ready to help you move your belongings to another state.`,
 			image: "s2.webp"
 		},
 		{
 			title: "Storage Services",
-			description:
-				"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
+			description: `Spacious and secure storage facilities for everything you have to leave behind for a while.`,
 			image: "s3.webp"
 		},
 		{
 			title: "Packing & Unpacking",
-			description:
-				"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
+			description: `professional team to help you pack your stuffs before moving and unpack it aZer the job done `,
 			image: "s4.webp"
 		}
 	];

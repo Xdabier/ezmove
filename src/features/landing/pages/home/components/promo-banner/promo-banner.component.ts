@@ -14,7 +14,7 @@ export class PromoBannerComponent {
 
 	qualities = [
 		{
-			title: "Long Distance Moving",
+			title: "Bay Area moving",
 			color: "bg-black",
 			iconColor: "#fff"
 		},
